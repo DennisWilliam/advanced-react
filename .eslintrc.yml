@@ -1,0 +1,94 @@
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - plugin:import/recommended
+  - plugin:import/typescript
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2018 # TODO: Atualizar para 2022 assim que atualizar o TS
+  sourceType: module
+plugins: []
+env:
+  browser: true
+  es6: true # TODO: Atualizar key para es2022 assim que atualizar o TS
+settings:
+  react:
+    version: detect
+rules:
+  no-use-before-define: warn
+  "@typescript-eslint/no-explicit-any": warn
+  "@typescript-eslint/explicit-module-boundary-types": off
+  indent:
+    - error
+    - tab
+    - SwitchCase: 1
+  linebreak-style:
+    - error
+    - windows
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  no-trailing-spaces: error
+  space-infix-ops: error
+  no-unused-vars: warn # TODO error
+  object-curly-spacing:
+    - error
+    - always
+    - arraysInObjects: false
+      objectsInObjects: false
+  array-bracket-spacing:
+    - error
+    - never
+  arrow-spacing:
+    - error
+    - before: true
+      after: true
+  block-spacing:
+    - error
+    - always
+  computed-property-spacing:
+    - error
+    - never
+  comma-spacing:
+    - error
+    - before: false
+      after: true
+  keyword-spacing:
+    - error
+    - before: true
+      after: true
+      overrides:
+        case:
+          after: false
+  space-before-function-paren:
+    - error
+    - anonymous: never
+      named: never
+      asyncArrow: always
+  no-multi-spaces:
+    - error
+    - ignoreEOLComments: true
+  # - Property: true # TODO: Habilitar qdo atualizar o eslint
+  eol-last:
+    - error
+    - always
+  no-unused-expressions:
+    - off #TODO: error; Necessário estar off até a atualização do eslint
+    - allowShortCircuit: true
+      allowTernary: true
+  array-callback-return:
+    - warn #TODO: error
+    - allowImplicit: true
+      # checkForEach: true #TODO: Habilitar qdo atualizar o eslint
+  consistent-return: warn #TODO: error
+  no-return-await: warn #TODO: error
+  no-useless-return: warn #TODO: error
+  react/hook-use-state: warn
+  react/prop-types: off # TODO: Habilitar qdo atualizar o eslint?
