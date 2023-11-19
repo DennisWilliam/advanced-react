@@ -92,3 +92,6 @@ rules:
   no-useless-return: warn #TODO: error
   react/hook-use-state: warn
   react/prop-types: off # TODO: Habilitar qdo atualizar o eslint?
+  react/jsx-uses-react: error
+  react/jsx-uses-vars: error
+  react/react-in-jsx-scope: off
