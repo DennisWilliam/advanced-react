@@ -10,5 +10,5 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
-  server: { port: 3000, open: "index.html" },
+  server: { port: 3000, open: "/" },
 });
