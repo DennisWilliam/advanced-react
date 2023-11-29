@@ -3,6 +3,7 @@ import InputSwitchWithKey from "./inputSwithWithKey";
 import Layout from "./layout";
 import RightCmpKey from "./rightCmpKey";
 import WrongCmpKey from "./wrongCmpKey";
+import WrongRenders from "./wrongRenders";
 
 const pagesData: RouterType[] = [];
 
@@ -19,5 +20,7 @@ createPageRoute({ path: "input-switch-with-key", element: <InputSwitchWithKey />
 createPageRoute({ path: "layout", element: <Layout />, title: "Layout" });
 // prettier-ignore
 createPageRoute({ path: "", element: <div>Home</div>, title: "Home" });
+// prettier-ignore
+createPageRoute({ path: "wrong-renders", element: <WrongRenders />, title: "WrongRenders" });
 
 export default pagesData;
