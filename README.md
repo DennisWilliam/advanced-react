@@ -35,3 +35,4 @@ http://localhost:3000/wrong-renders
 http://localhost:3000/wrong-cmp-key
 http://localhost:3000/right-cmp-key
 http://localhost:3000/layout
+http://localhost:3000/imperative-declarative
