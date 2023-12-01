@@ -1,4 +1,5 @@
 import { RouterType } from "../types/router.types";
+import ComponentLifeCycle from "./componentLifeCycle";
 import ImperativeDeclarative from "./imperativeDeclarative";
 import InputSwitchWithKey from "./inputSwithWithKey";
 import Layout from "./layout";
@@ -25,5 +26,7 @@ createPageRoute({ path: "", element: <div>Home</div>, title: "Home" });
 createPageRoute({ path: "wrong-renders", element: <WrongRenders />, title: "WrongRenders" });
 // prettier-ignore
 createPageRoute({ path: "imperative-declarative", element: <ImperativeDeclarative />, title: "ImperativeDeclarative" });
+// prettier-ignore
+createPageRoute({ path: "life-cycle", element: <ComponentLifeCycle />, title: "LifeCycle" });
 
 export default pagesData;
