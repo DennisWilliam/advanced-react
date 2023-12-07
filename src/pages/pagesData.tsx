@@ -3,6 +3,7 @@ import ComponentLifeCycle from "./componentLifeCycle";
 import ImperativeDeclarative from "./imperativeDeclarative";
 import InputSwitchWithKey from "./inputSwithWithKey";
 import Layout from "./layout";
+import MemoizationCache from "./memoization";
 import RightCmpKey from "./rightCmpKey";
 import WrongCmpKey from "./wrongCmpKey";
 import WrongRenders from "./wrongRenders";
@@ -28,5 +29,7 @@ createPageRoute({ path: "wrong-renders", element: <WrongRenders />, title: "Wron
 createPageRoute({ path: "imperative-declarative", element: <ImperativeDeclarative />, title: "ImperativeDeclarative" });
 // prettier-ignore
 createPageRoute({ path: "life-cycle", element: <ComponentLifeCycle />, title: "LifeCycle" });
+// prettier-ignore
+createPageRoute({ path: "memoization-cache", element: <MemoizationCache />, title: "MemoizationCache" });
 
 export default pagesData;
