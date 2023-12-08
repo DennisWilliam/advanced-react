@@ -1,4 +1,5 @@
 import { RouterType } from "../types/router.types";
+import Callback from "./callback";
 import ComponentLifeCycle from "./componentLifeCycle";
 import ImperativeDeclarative from "./imperativeDeclarative";
 import InputSwitchWithKey from "./inputSwithWithKey";
@@ -31,5 +32,7 @@ createPageRoute({ path: "imperative-declarative", element: <ImperativeDeclarativ
 createPageRoute({ path: "life-cycle", element: <ComponentLifeCycle />, title: "LifeCycle" });
 // prettier-ignore
 createPageRoute({ path: "memoization-cache", element: <MemoizationCache />, title: "MemoizationCache" });
+// prettier-ignore
+createPageRoute({ path: "callback", element: <Callback />, title: "Callback" });
 
 export default pagesData;
