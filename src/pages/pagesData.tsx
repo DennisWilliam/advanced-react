@@ -1,6 +1,7 @@
 import { RouterType } from "../types/router.types";
 import Callback from "./callback";
 import ComponentLifeCycle from "./componentLifeCycle";
+import HighOrderComponent from "./highOrder";
 import ImperativeDeclarative from "./imperativeDeclarative";
 import InputSwitchWithKey from "./inputSwithWithKey";
 import Layout from "./layout";
@@ -40,4 +41,6 @@ createPageRoute({ path: "callback", element: <Callback />, title: "Callback" });
 createPageRoute({ path: "memo", element: <ComponentMemo />, title: "Memo" });
 // prettier-ignore
 createPageRoute({ path: "use-memo", element: <ComponentUseMemo />, title: "UseMemo" });
+// prettier-ignore
+createPageRoute({ path: "hoc", element: <HighOrderComponent />, title: "Hoc" });
 export default pagesData;
