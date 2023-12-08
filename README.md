@@ -40,3 +40,4 @@ http://localhost:3000/life-cycle
 http://localhost:3000/memoization-cache
 http://localhost:3000/callback
 http://localhost:3000/memo
+http://localhost:3000/use-memo

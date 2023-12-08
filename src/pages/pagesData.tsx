@@ -7,6 +7,7 @@ import Layout from "./layout";
 import ComponentMemo from "./memo";
 import MemoizationCache from "./memoization";
 import RightCmpKey from "./rightCmpKey";
+import ComponentUseMemo from "./useMemo";
 import WrongCmpKey from "./wrongCmpKey";
 import WrongRenders from "./wrongRenders";
 
@@ -37,5 +38,6 @@ createPageRoute({ path: "memoization-cache", element: <MemoizationCache />, titl
 createPageRoute({ path: "callback", element: <Callback />, title: "Callback" });
 // prettier-ignore
 createPageRoute({ path: "memo", element: <ComponentMemo />, title: "Memo" });
-
+// prettier-ignore
+createPageRoute({ path: "use-memo", element: <ComponentUseMemo />, title: "UseMemo" });
 export default pagesData;
